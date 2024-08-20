@@ -46,6 +46,9 @@ ActiveAdmin.register Band do
         column :position
         column :royalty
         column :wallet
+        column "Earning" do
+          :earning
+        end
       end
     end
   end

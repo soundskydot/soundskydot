@@ -14,7 +14,7 @@
 class Member < ApplicationRecord
   belongs_to :band
   has_many :incomes, :dependent => :destroy
-  
+
   def self.ransackable_associations(auth_object = nil)
     ["band"]
   end
@@ -35,4 +35,8 @@ class Member < ApplicationRecord
     Keyboardis: 8,
     User_Listener: 9
   }
+
+  def self.earning
+    1000
+  end
 end

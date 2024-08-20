@@ -3,13 +3,10 @@ class HomeController < ApplicationController
     @song = Song.first    
   end
 
-  def playing
-    puts "==== Playing ====="
+  def playing    
     song_id = params[:song_id]
     song = Song.find_by(song_id)
-    if song
-      # puts song.band.members.first.royalty
-      puts song.price
+    if song            
       song.band.members.each do |member|
         amount = member.royalty / 100 * song.price
         member.incomes.create!(song: song, amount: amount, user_id: 1)
