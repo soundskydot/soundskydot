@@ -18,12 +18,12 @@ Ownership, Data Storage and Distibution on BLOCKCHAIN.
 
 Details flow:
 // Admin //
-=> Upload music's file in any format, eg: wav, mp4. 
-=> Fill form such like: title, year, album, etc.
-=> Add price song / play in USDT
-=> Add the shareholder of the song. 
+// => Upload music's file in any format, eg: wav, mp4. 
+// => Fill form such like: title, year, album, etc.
+// => Add price song / play in USDT
+// => Add the shareholder of the song. 
   > publisher, singer, composer, song writer, etc. | percetage | DOT wallet address
-=> Publish on NFT in Unique.network
+// => Publish on NFT in Unique.network
 
 // User //
 => play music 
