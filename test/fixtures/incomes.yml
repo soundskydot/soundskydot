@@ -1,0 +1,21 @@
+# == Schema Information
+#
+# Table name: incomes
+#
+#  id         :integer          not null, primary key
+#  member_id  :integer          not null
+#  song_id    :integer          not null
+#  amount     :float
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+one:
+  member: one
+  song: one
+  amount: 1.5
+
+two:
+  member: two
+  song: two
+  amount: 1.5

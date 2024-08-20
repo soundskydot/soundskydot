@@ -1,0 +1,21 @@
+# == Schema Information
+#
+# Table name: songs
+#
+#  id         :integer          not null, primary key
+#  band_id    :integer          not null
+#  price      :float
+#  year       :integer
+#  title      :string
+#  album      :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+one:
+  band: one
+  price: 1.5
+
+two:
+  band: two
+  price: 1.5

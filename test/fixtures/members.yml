@@ -1,0 +1,25 @@
+# == Schema Information
+#
+# Table name: members
+#
+#  id         :integer          not null, primary key
+#  band_id    :integer          not null
+#  name       :string
+#  position   :integer
+#  royalty    :float
+#  wallet     :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+one:
+  band: one
+  name: MyString
+  position: MyString
+  royalty: 1.5
+
+two:
+  band: two
+  name: MyString
+  position: MyString
+  royalty: 1.5

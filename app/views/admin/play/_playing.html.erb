@@ -1,0 +1,32 @@
+<h3>Play the song</h3>
+<%= playing_path(song.id) %>
+<% if song.lagu.attached? %>
+    <div>Album: <%= song.album %></div>
+    <div>Title: <%= song.title %></div>
+    <div>Band: <%= song.band.name %></div>
+    <div>Year: <%= song.year %></div>
+    <div>Price: <%= song.price %></div>
+    <hr size="1" />
+  <%= audio_tag url_for(song.lagu), controls: true, id: "audio-player" %>
+<% else %>
+  <p>No audio file available</p>
+<% end %>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var audioPlayer = document.getElementById("audio-player");
+
+  if (audioPlayer) {
+    audioPlayer.addEventListener("play", function() {
+      fetch('<%= playing_path(song.id) %>', {
+        method: 'GET',
+        headers: {          
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(data => {
+        console.log('Success');
+      });
+    });
+  }
+});
+</script>
