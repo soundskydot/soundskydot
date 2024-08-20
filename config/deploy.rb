@@ -2,7 +2,7 @@
 lock "~> 3.19.1"
 
 set :application, "royalty"
-set :repo_url, "https://github.com/soundskydot/soundskydot.git"
+set :repo_url, "git@github.com:soundskydot/soundskydot.git"
 set :deploy_to, "/home/deploy/#{fetch :application}"
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
 
