@@ -1,24 +1,38 @@
-# README
+-- Listen to Earn -- 
+Solution for music's royalty distribution. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Problem:
+The music industry, especially in Indonesia, always experiences problems due to royalty payments which are complained about by a number of songwriters who are members 
+of the All Indonesian Composers Association (AKSI). They even introduced a new system called Digital Direct License (DDL) so that royalty payments no longer need to 
+go through the National Collective Management Institute (LMKN), which is considered problematic. Many singers and songwriters have clashed to the point of giving each 
+other lawsuits over the issue of incomplete royalty payments.
 
-Things you may want to cover:
+Sample:
+Ahmad Dhani with Once Mekel, 
+Posan Tobing with the band Kotak, 
+Rieka Roslan with The Groove,
+Ndhank Surahman with Andre Taulany and Stinky.
 
-* Ruby version
+Solution:
+Ownership, Data Storage and Distibution on BLOCKCHAIN. 
 
-* System dependencies
+Details flow:
+// Admin //
+=> Upload music's file in any format, eg: wav, mp4. 
+=> Fill form such like: title, year, album, etc.
+=> Add price song / play in USDT
+=> Add the shareholder of the song. 
+  > publisher, singer, composer, song writer, etc. | percetage | DOT wallet address
+=> Publish on NFT in Unique.network
 
-* Configuration
+// User //
+=> play music 
+=> get earn based on percentage on wallet 
 
-* Database creation
+// Shareholder //
+=> get royalty basen on percentage 
+=> sent to wallet after song finished played.
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+   
